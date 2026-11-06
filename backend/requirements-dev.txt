@@ -1,0 +1,6 @@
+# extras for running the tests and for regenerating the demo video / slide deck (not needed to run the app)
+reportlab>=4.0      # generates the PDFs used by tests/test_features.py
+pillow>=10.0        # builds the scanned-PDF fixture for the OCR test
+playwright>=1.45    # docs/record_demo.py (screen recording)
+imageio-ffmpeg>=0.5 # mp4 conversion for the recording
+python-pptx>=1.0    # docs/build_deck.py (slide deck)

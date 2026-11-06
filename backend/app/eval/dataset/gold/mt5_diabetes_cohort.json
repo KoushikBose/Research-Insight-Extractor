@@ -1,0 +1,9 @@
+{"sections": ["Abstract","Introduction","Methods","Results","Discussion","Conclusion","References"],
+ "keywords": ["MT-5","HbA1c","type 2 diabetes","HPLC","glycaemic control"],
+ "facts": {"objective": ["MT-5"], "study_design": ["cohort"], "sample_size": ["180"], "dosage": ["500 mg"], "assays_methods": ["HPLC"],
+           "primary_endpoint": ["HbA1c"], "key_results": ["1.2"], "statistics": ["p = 0.01"], "limitations": ["limitation"], "conclusion": ["MT-5"]},
+ "reference_summary": "In an open-label cohort of 180 adults with type 2 diabetes, MT-5 500 mg twice daily for 24 weeks reduced HbA1c by 1.2 percentage points (p = 0.01), improving glycaemic control.",
+ "entities": {"drug_compound": ["MT-5"], "dose": ["500 mg"], "assay": ["HPLC"], "disease": ["diabetes"]},
+ "qa": [{"q": "By how much did MT-5 reduce HbA1c?", "paper": "mt5_diabetes_cohort"}],
+ "qa_semantic": [{"q": "blood sugar lowering medication results in adults with metabolic disease", "paper": "mt5_diabetes_cohort"}],
+ "has_injection": false}

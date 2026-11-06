@@ -1,0 +1,9 @@
+{"sections": ["Abstract","Introduction","Methods","Results","Discussion","Conclusion"],
+ "keywords": ["microbiome","dietary fibre","inulin","butyrate","16S sequencing"],
+ "facts": {"objective": ["diversity"], "study_design": ["randomized"], "sample_size": ["320"], "dosage": ["30 g"], "assays_methods": ["16S sequencing"],
+           "primary_endpoint": ["butyrate"], "key_results": ["23%"], "statistics": ["p = 0.002"], "limitations": ["limitation"], "conclusion": ["diversity"]},
+ "reference_summary": "In a randomized crossover trial of 320 volunteers taking 30 g inulin daily for 8 weeks, higher baseline microbiome diversity predicted a 23% larger rise in butyrate (p = 0.002).",
+ "entities": {"dose": ["30 g"], "assay": ["sequencing","mass spectrometry"]},
+ "qa": [{"q": "What butyrate increase was linked to higher microbiome diversity?", "paper": "microbiome_jats"}],
+ "qa_semantic": [{"q": "bacteria in the intestine and eating more plant carbohydrates", "paper": "microbiome_jats"}],
+ "has_injection": false}

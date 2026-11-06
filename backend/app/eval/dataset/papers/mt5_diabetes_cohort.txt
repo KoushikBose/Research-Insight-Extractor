@@ -1,0 +1,25 @@
+MT-5 Lowers Glycated Haemoglobin in Type 2 Diabetes: An Open-Label Cohort Study
+Authors: Anita Rao; Tomas Berg
+Published: 2024-09-05
+Keywords: type 2 diabetes; HbA1c; MT-5; glycaemic control
+
+Abstract
+Many adults with type 2 diabetes do not reach glycaemic targets. The aim of this study was to assess whether MT-5 improves glycated haemoglobin (HbA1c) in adults with type 2 diabetes. In this open-label cohort study, 180 patients received MT-5 500 mg twice daily for 24 weeks. HbA1c fell by 1.2 percentage points from baseline (p = 0.01). We conclude that MT-5 improves glycaemic control.
+
+Introduction
+Type 2 diabetes is characterised by insulin resistance and progressive beta-cell failure. Biguanide-like agents reduce hepatic glucose output. Better tolerated options are needed for patients who cannot take existing therapy.
+
+Methods
+This was an open-label, single-arm cohort study at six clinics. A total of 180 adult patients (n = 180) with type 2 diabetes were enrolled. Participants received MT-5 500 mg orally twice daily for 24 weeks. Plasma drug concentrations were measured by HPLC. The primary endpoint was the change in HbA1c from baseline to week 24. Changes were tested with a paired t-test.
+
+Results
+Mean HbA1c decreased by 1.2 percentage points from baseline to week 24 (p = 0.01). Fasting glucose was significantly reduced in 71% of patients. Mild gastrointestinal events occurred in 9% of participants.
+
+Discussion
+MT-5 improved glycaemic control in this cohort. A limitation is the lack of a control group, so placebo effects cannot be excluded. Randomised trials are needed.
+
+Conclusion
+MT-5 500 mg twice daily significantly reduced HbA1c in adults with type 2 diabetes.
+
+References
+1. Lee S. Biguanides in diabetes care. 2019.

@@ -1,0 +1,32 @@
+# OPTIONAL: run the same primary -> fallback strategy as a standalone LiteLLM proxy (gateway server).
+#   pip install "litellm[proxy]"
+#   litellm --config litellm_config.yaml --port 4000
+# then in backend/.env:
+#   LITELLM_PROXY_URL=http://localhost:4000
+#   LITELLM_PROXY_KEY=sk-anything        # only if you set a master_key below
+# The app keeps its own fallback + circuit breaker + logging on top, so behaviour is identical either way.
+# (The in-process mode, which is the default, needs none of this.)
+
+model_list:
+  - model_name: qwen/qwen3.8-27b                         # PRIMARY  (app sends it as openai/<this name>)
+    litellm_params:
+      model: groq/qwen/qwen3.8-27b
+      api_key: os.environ/GROQ_API_KEY
+  - model_name: openai/gpt-oss-120b                   # FALLBACK
+    litellm_params:
+      model: groq/openai/gpt-oss-120b
+      api_key: os.environ/GROQ_API_KEY
+      reasoning_effort: low
+
+litellm_settings:
+  drop_params: true
+  fallbacks: [{"qwen/qwen3.8-27b": ["openai/gpt-oss-120b"]}]   # proxy-level safety net
+
+router_settings:
+  num_retries: 1
+  timeout: 90
+  allowed_fails: 2          # same idea as LLM_FAIL_THRESHOLD
+  cooldown_time: 300        # same idea as LLM_COOLDOWN_SECONDS
+
+# general_settings:
+#   master_key: sk-anything

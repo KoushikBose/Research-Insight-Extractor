@@ -1,0 +1,90 @@
+{
+  "sections": [
+    "Abstract",
+    "Introduction",
+    "Methods",
+    "Results",
+    "Discussion",
+    "Conclusion",
+    "References"
+  ],
+  "keywords": [
+    "LM-22",
+    "5xFAD",
+    "amyloid-beta",
+    "Alzheimer",
+    "TREM2",
+    "ELISA",
+    "Morris water maze",
+    "microglia"
+  ],
+  "facts": {
+    "objective": [
+      "LM-22",
+      "plaque"
+    ],
+    "study_design": [
+      "5xFAD",
+      "mice"
+    ],
+    "sample_size": [
+      "36"
+    ],
+    "dosage": [
+      "10 mg/kg"
+    ],
+    "assays_methods": [
+      "ELISA",
+      "western blot"
+    ],
+    "key_results": [
+      "37%"
+    ],
+    "statistics": [
+      "p = 0.003"
+    ],
+    "limitations": [
+      "limitation"
+    ],
+    "conclusion": [
+      "LM-22"
+    ]
+  },
+  "reference_summary": "LM-22 at 10 mg/kg daily for 8 weeks lowered cortical amyloid-beta 42 by 37% (p = 0.003) and improved Morris water maze performance in 36 5xFAD mice, supporting further preclinical evaluation.",
+  "qa": [
+    {
+      "q": "How much did LM-22 reduce amyloid-beta 42 in 5xFAD mice?",
+      "paper": "lm22_amyloid_mice"
+    },
+    {
+      "q": "Which behavioural test measured spatial memory in the mouse model?",
+      "paper": "lm22_amyloid_mice"
+    }
+  ],
+  "has_injection": false,
+  "entities": {
+    "drug_compound": [
+      "LM-22"
+    ],
+    "gene_protein": [
+      "TREM2"
+    ],
+    "dose": [
+      "10 mg/kg"
+    ],
+    "assay": [
+      "ELISA",
+      "western blot"
+    ],
+    "model_organism": [
+      "5xFAD",
+      "mice"
+    ]
+  },
+  "qa_semantic": [
+    {
+      "q": "small molecule protecting memory in rodent model of dementia",
+      "paper": "lm22_amyloid_mice"
+    }
+  ]
+}

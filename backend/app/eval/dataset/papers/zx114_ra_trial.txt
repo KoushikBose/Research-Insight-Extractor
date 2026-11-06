@@ -1,0 +1,26 @@
+Efficacy and Safety of ZX-114, an Oral JAK1 Inhibitor, in Rheumatoid Arthritis: A Randomized Double-Blind Placebo-Controlled Trial
+Authors: Maria Gonzales; Ravi Menon; Li Wei
+Published: 2024-03-12
+Keywords: rheumatoid arthritis; JAK1 inhibitor; ZX-114; ACR20; IL-6
+Synthetic paper created for development testing. Contact: m.gonzales@example.org, +1 415 555 0134
+
+Abstract
+Many patients with rheumatoid arthritis (RA) show an inadequate response to methotrexate. The objective of this study was to evaluate the efficacy and safety of ZX-114, an oral selective JAK1 inhibitor, in patients with active RA. In this randomized, double-blind, placebo-controlled phase 2 trial, 240 patients received ZX-114 50 mg once daily or placebo for 12 weeks. The primary endpoint was ACR20 response at week 12. ACR20 was achieved by 62% of patients receiving ZX-114 versus 28% receiving placebo (p < 0.001). We conclude that ZX-114 significantly improves disease activity in methotrexate-inadequate responders.
+
+Introduction
+Rheumatoid arthritis is a chronic autoimmune disease characterised by synovial inflammation and joint destruction. Signalling through IL-6 and other cytokines depends on the JAK-STAT pathway. Selective inhibition of JAK1 may reduce inflammation while limiting off-target effects. Earlier studies of non-selective JAK inhibitors reported dose-limiting anaemia.
+
+Methods
+This was a randomized, double-blind, placebo-controlled, phase 2 trial conducted at 28 sites. Adults with active RA and an inadequate response to methotrexate were eligible. A total of 240 patients (n = 240) were randomized 1:1 to receive ZX-114 50 mg orally once daily or matching placebo for 12 weeks. Serum IL-6 and CRP concentrations were measured by ELISA. The primary endpoint was the proportion of patients achieving ACR20 at week 12. Differences between groups were assessed using the Cochran-Mantel-Haenszel test.
+
+Results
+At week 12, ACR20 response was reached by 62% of patients in the ZX-114 group compared with 28% in the placebo group (p < 0.001). Serum IL-6 decreased by 41% in the ZX-114 group and by 6% in the placebo group. CRP fell significantly from baseline (p = 0.002). Adverse events were mostly mild; two patients discontinued ZX-114 because of elevated liver enzymes.
+
+Discussion
+ZX-114 produced clinically meaningful improvement in disease activity within twelve weeks. A limitation of this study is the short treatment duration and the small sample size for rare safety events. Longer phase 3 trials are needed to confirm durability.
+
+Conclusion
+ZX-114 50 mg once daily significantly improved ACR20 response compared with placebo in patients with methotrexate-inadequate RA.
+
+References
+1. Smith J. et al. JAK inhibition in autoimmune disease. 2021.

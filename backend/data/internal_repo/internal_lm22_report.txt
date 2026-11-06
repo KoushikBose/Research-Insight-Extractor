@@ -1,0 +1,25 @@
+Compound LM-22 Reduces Amyloid Plaque Burden and Improves Memory in 5xFAD Mice
+Authors: Hannah Okafor; Dmitri Volkov
+Published: 2023-11-02
+Keywords: Alzheimer's disease; amyloid-beta; LM-22; 5xFAD; neuroinflammation
+
+Abstract
+Amyloid-beta deposition is a hallmark of Alzheimer's disease. We aimed to determine whether the small molecule LM-22 reduces plaque burden in the 5xFAD mouse model. Thirty-six 5xFAD mice (n = 36) received LM-22 at 10 mg/kg or vehicle daily for 8 weeks. LM-22 reduced cortical amyloid-beta 42 levels by 37% (p = 0.003) and improved performance in the Morris water maze. These results suggest that LM-22 is a promising candidate for further preclinical development.
+
+Introduction
+Alzheimer's disease affects millions of people worldwide, and current therapies offer only modest benefit. Activated microglia contribute to plaque clearance but also to chronic neuroinflammation. Small molecules that tune microglial activity could therefore alter disease course.
+
+Methods
+Thirty-six male 5xFAD mice, 4 months old, were randomly assigned to receive LM-22 at 10 mg/kg by oral gavage once daily or vehicle for 8 weeks (n = 18 per group). Amyloid-beta 42 in cortical homogenates was quantified by ELISA, and microglial markers were measured by western blot. Spatial memory was assessed using the Morris water maze. Group differences were tested with a two-tailed Student's t-test and repeated-measures ANOVA.
+
+Results
+Cortical amyloid-beta 42 was 37% lower in LM-22 treated mice than in vehicle controls (p = 0.003). Western blot showed a significant increase in the microglial marker TREM2 (p = 0.01). In the Morris water maze, treated mice reached the hidden platform 18 seconds faster on day 5 (p = 0.02).
+
+Discussion
+LM-22 reduced plaque burden and improved memory in this model. Limitations include the use of male mice only and a single dose level. Further studies in additional models are needed before clinical translation.
+
+Conclusion
+LM-22 lowers amyloid-beta 42 and improves spatial memory in 5xFAD mice, supporting further preclinical evaluation.
+
+References
+1. Jones K. Microglia in Alzheimer's disease. 2020.

@@ -1,0 +1,9 @@
+{"sections": ["Abstract","Introduction","Methods","Results","Discussion","Conclusion","References"],
+ "keywords": ["retifozumab","PD-L1","melanoma","xenograft","flow cytometry","CD8"],
+ "facts": {"objective": ["retifozumab"], "study_design": ["xenograft"], "sample_size": ["48"], "dosage": ["5 mg/kg"], "assays_methods": ["flow cytometry"],
+           "key_results": ["58%"], "statistics": ["p < 0.001"], "limitations": ["limitation"], "conclusion": ["Retifozumab"]},
+ "reference_summary": "Retifozumab, an anti-PD-L1 antibody given at 5 mg/kg to 48 NOD/SCID mice with melanoma xenografts, reduced tumour volume by 58% (p < 0.001) and increased CD8 T-cell infiltration.",
+ "entities": {"drug_compound": ["retifozumab"], "dose": ["5 mg/kg"], "assay": ["flow cytometry","ELISA"], "model_organism": ["mice","xenograft"]},
+ "qa": [{"q": "What tumour volume reduction did retifozumab give?", "paper": "pdl1_melanoma_mice"}],
+ "qa_semantic": [{"q": "antibody therapy shrinking skin cancer growths in rodents", "paper": "pdl1_melanoma_mice"}],
+ "has_injection": false}

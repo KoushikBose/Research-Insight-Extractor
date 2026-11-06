@@ -1,0 +1,83 @@
+{
+  "sections": [
+    "Abstract",
+    "Introduction",
+    "Methods",
+    "Results",
+    "Discussion",
+    "Conclusion",
+    "References"
+  ],
+  "keywords": [
+    "CRISPR",
+    "KRAS",
+    "SHP2",
+    "SOS1",
+    "pancreatic",
+    "Cas9",
+    "flow cytometry",
+    "MAGeCK"
+  ],
+  "facts": {
+    "objective": [
+      "dependencies"
+    ],
+    "study_design": [
+      "in vitro",
+      "CRISPR"
+    ],
+    "sample_size": [
+      "four"
+    ],
+    "assays_methods": [
+      "flow cytometry",
+      "sequencing"
+    ],
+    "key_results": [
+      "70%"
+    ],
+    "statistics": [
+      "p < 0.01"
+    ],
+    "limitations": [
+      "limitation"
+    ],
+    "conclusion": [
+      "SHP2"
+    ]
+  },
+  "reference_summary": "A genome-wide CRISPR-Cas9 knockout screen in four KRAS-mutant pancreatic cancer cell lines identified SHP2 and SOS1 as selective dependencies; SHP2 knockout reduced viability by 70% (p < 0.01), nominating the SHP2-SOS1 axis as a therapeutic target.",
+  "qa": [
+    {
+      "q": "Which genes were identified as selective dependencies in KRAS-mutant pancreatic cell lines?",
+      "paper": "crispr_kras_screen"
+    },
+    {
+      "q": "How much did SHP2 knockout reduce cell viability?",
+      "paper": "crispr_kras_screen"
+    }
+  ],
+  "has_injection": true,
+  "entities": {
+    "gene_protein": [
+      "SHP2",
+      "SOS1",
+      "KRAS"
+    ],
+    "assay": [
+      "flow cytometry"
+    ],
+    "model_organism": [
+      "PANC-1"
+    ],
+    "disease": [
+      "pancreatic ductal adenocarcinoma"
+    ]
+  },
+  "qa_semantic": [
+    {
+      "q": "gene knockout experiment finding vulnerabilities in pancreas tumour cells",
+      "paper": "crispr_kras_screen"
+    }
+  ]
+}

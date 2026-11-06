@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+ <front><article-meta>
+  <article-id pub-id-type="doi">10.1234/gut.2024.0042</article-id>
+  <title-group><article-title>Gut Microbiome Diversity Predicts Response to Dietary Fibre Intervention in Healthy Volunteers</article-title></title-group>
+  <contrib-group>
+   <contrib contrib-type="author"><name><surname>Haddad</surname><given-names>Layla</given-names></name></contrib>
+   <contrib contrib-type="author"><name><surname>Novak</surname><given-names>Petr</given-names></name></contrib>
+  </contrib-group>
+  <pub-date><year>2024</year><month>7</month><day>3</day></pub-date>
+  <kwd-group><kwd>microbiome</kwd><kwd>dietary fibre</kwd><kwd>16S sequencing</kwd><kwd>short-chain fatty acids</kwd></kwd-group>
+  <abstract><p>The aim of this study was to determine whether baseline gut microbiome diversity predicts metabolic response to dietary fibre. In a randomized crossover trial, 320 volunteers consumed 30 g inulin daily or placebo for 8 weeks. Higher baseline diversity was associated with a 23% larger rise in butyrate (p = 0.002). We conclude that diversity is a predictor of fibre response.</p></abstract>
+ </article-meta></front>
+ <body>
+  <sec><title>Introduction</title><p>Dietary fibre is fermented by gut bacteria into short-chain fatty acids. Individual responses vary widely and the reasons are unclear.</p></sec>
+  <sec><title>Materials and Methods</title><p>This randomized, placebo-controlled crossover trial enrolled 320 healthy volunteers (n = 320). Participants consumed 30 g inulin or placebo daily for 8 weeks with a four-week washout. Stool microbiota composition was profiled by 16S sequencing and butyrate was quantified by mass spectrometry. The primary endpoint was the change in faecal butyrate. Mixed-effects models were used for analysis.</p></sec>
+  <sec><title>Results</title><p>Volunteers with high baseline diversity showed a 23% larger increase in butyrate than those with low diversity (p = 0.002). Inulin significantly increased Bifidobacterium abundance in all groups.</p></sec>
+  <sec><title>Discussion</title><p>Baseline diversity predicted fibre response. A limitation is that only healthy adults were studied, so results may not generalise to patients.</p></sec>
+  <sec><title>Conclusions</title><p>Baseline microbiome diversity predicts butyrate response to 30 g daily inulin.</p></sec>
+ </body>
+</article>

@@ -1,0 +1,93 @@
+{
+  "sections": [
+    "Front Matter",
+    "Abstract",
+    "Introduction",
+    "Methods",
+    "Results",
+    "Discussion",
+    "Conclusion",
+    "References"
+  ],
+  "keywords": [
+    "JAK1",
+    "ZX-114",
+    "ACR20",
+    "IL-6",
+    "rheumatoid arthritis",
+    "methotrexate",
+    "placebo",
+    "CRP"
+  ],
+  "facts": {
+    "objective": [
+      "ZX-114",
+      "efficacy"
+    ],
+    "study_design": [
+      "randomized",
+      "placebo"
+    ],
+    "sample_size": [
+      "240"
+    ],
+    "dosage": [
+      "50 mg"
+    ],
+    "assays_methods": [
+      "ELISA"
+    ],
+    "primary_endpoint": [
+      "ACR20"
+    ],
+    "key_results": [
+      "62%",
+      "28%"
+    ],
+    "statistics": [
+      "p"
+    ],
+    "limitations": [
+      "limitation"
+    ],
+    "conclusion": [
+      "ZX-114"
+    ]
+  },
+  "reference_summary": "ZX-114, an oral JAK1 inhibitor, was tested in a randomized double-blind placebo-controlled phase 2 trial of 240 rheumatoid arthritis patients with inadequate methotrexate response. At 50 mg once daily for 12 weeks, 62% of treated patients reached ACR20 versus 28% on placebo (p < 0.001). ZX-114 significantly improves disease activity.",
+  "qa": [
+    {
+      "q": "What ACR20 response did ZX-114 achieve versus placebo?",
+      "paper": "zx114_ra_trial"
+    },
+    {
+      "q": "Which JAK1 inhibitor was tested in rheumatoid arthritis patients?",
+      "paper": "zx114_ra_trial"
+    }
+  ],
+  "has_injection": false,
+  "entities": {
+    "drug_compound": [
+      "ZX-114"
+    ],
+    "gene_protein": [
+      "JAK1",
+      "IL-6"
+    ],
+    "dose": [
+      "50 mg"
+    ],
+    "assay": [
+      "ELISA"
+    ],
+    "disease": [
+      "rheumatoid arthritis"
+    ]
+  },
+  "qa_semantic": [
+    {
+      "q": "oral medicine for swollen joint autoimmune condition efficacy",
+      "paper": "zx114_ra_trial"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+Anti-PD-L1 Antibody Retifozumab Suppresses Tumour Growth in a Melanoma Xenograft Model
+Authors: Elena Petrova; Jin Park
+Published: 2025-01-18
+Keywords: melanoma; PD-L1; retifozumab; xenograft; immunotherapy
+
+Abstract
+Immune checkpoint blockade has transformed melanoma therapy, but many tumours resist treatment. We investigated whether the antibody retifozumab, which targets PD-L1, controls tumour growth in a melanoma xenograft model. Forty-eight NOD/SCID mice bearing A375 xenografts received retifozumab at 5 mg/kg or isotype control twice weekly. Tumour volume was reduced by 58% (p < 0.001). These data support clinical evaluation of retifozumab.
+
+Introduction
+Melanoma is an aggressive skin cancer. Expression of PD-L1 on tumour cells suppresses T-cell activity. Antibodies against PD-1 or PD-L1 restore anti-tumour immunity in a subset of patients.
+
+Methods
+Forty-eight NOD/SCID mice (n = 48) were implanted subcutaneously with A375 melanoma cells and randomised to retifozumab 5 mg/kg intraperitoneally twice weekly or isotype control for four weeks. Tumour-infiltrating lymphocytes were profiled by flow cytometry and cytokines were quantified by ELISA. Tumour volume was compared using two-way ANOVA.
+
+Results
+Retifozumab reduced mean tumour volume by 58% compared with control (p < 0.001). Flow cytometry showed a significant increase in CD8 T cells within tumours (p = 0.004). Serum IFN-gamma was higher in treated animals.
+
+Discussion
+Retifozumab inhibited melanoma growth and increased cytotoxic T-cell infiltration. A limitation of the xenograft model is the absence of a fully intact immune system. Syngeneic models should be tested.
+
+Conclusion
+Retifozumab at 5 mg/kg suppresses melanoma xenograft growth and enhances CD8 T-cell infiltration.
+
+References
+1. Wolchok J. Checkpoint blockade. 2018.

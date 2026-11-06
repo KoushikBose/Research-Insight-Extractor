@@ -1,0 +1,20 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+python-dotenv>=1.0
+httpx>=0.27
+pypdf>=4.2
+langchain>=0.3
+langchain-core>=0.3
+langchain-groq>=0.2
+deepagents>=0.0.5
+pip-system-certs>=4.0  # trust Windows cert store behind corporate proxies
+langsmith>=0.1.140
+pdfplumber>=0.11          # tables from PDFs
+pypdfium2>=4.30           # PDF page rendering for OCR
+rapidocr-onnxruntime>=1.3 # OCR for scanned PDFs (pure pip, no Tesseract)
+fastembed>=0.3            # local ONNX embeddings for semantic search
+numpy>=1.26
+# tests only: reportlab, pillow
+litellm>=1.50          # LLM gateway (primary -> fallback)
+langchain-litellm>=0.2 # LiteLLM chat model for the Deep Agent
