@@ -6,7 +6,7 @@ header h1 { font-size:17px; margin:0; }
 nav { display:flex; gap:4px; flex:1; }
 nav button { background:transparent; color:#cbd5e1; border:0; padding:8px 14px; border-radius:6px; cursor:pointer; }
 nav button.active, nav button:hover { background:#374151; color:#fff; }
-main { max-width:1280px; margin:20px auto; padding:0 16px; }
+main { max-width:1280px; margin:20px auto; padding:0 16px 40px; }
 .stack { display:flex; flex-direction:column; gap:16px; }
 .grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(380px,1fr)); gap:16px; }
 .grid3 { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px; }
@@ -133,3 +133,22 @@ button.danger { background:var(--bad); }
 .kb-empty { display:flex; flex-direction:column; align-items:center; gap:6px; text-align:center; padding:36px 12px; border:2px dashed var(--line); border-radius:12px; }
 .kb-table tr.selected td { background:#eef2ff; } .kb-table td { vertical-align:top; }
 mark { background:#fde68a; border-radius:3px; padding:0 1px; }
+
+/* Cross-paper comparison */
+.cmp-wrap { overflow:auto; max-height:520px; margin-top:10px; border:1px solid var(--line); border-radius:8px; }
+table.cmp { font-size:13px; }
+table.cmp th { position:sticky; top:0; background:#f8fafc; z-index:1; white-space:nowrap; }
+table.cmp th.sortable { cursor:pointer; user-select:none; } table.cmp th.sortable:hover { color:var(--pri); }
+table.cmp .num { text-align:right; }
+table.cmp tbody tr:hover { background:#f8fafc; }
+table.cmp tr.picked { background:#eef0ff; } table.cmp tr.dim { opacity:.5; }
+table.cmp a { color:var(--pri); cursor:pointer; font-weight:600; }
+
+/* TCS logo in header */
+.brand-logo { display:flex; align-items:center; }
+.brand-logo img { height:26px; width:auto; display:block; filter:brightness(0) invert(1); }
+
+/* Watermark: small "Friday Forever AI Team" at the bottom of the page (click-through) */
+.watermark { position:fixed; right:96px; bottom:14px; pointer-events:none; z-index:10; }
+.watermark::after { content:"Friday Forever AI Team"; font-size:13px; font-weight:600; letter-spacing:1.5px; color:var(--muted); opacity:.7; user-select:none; }
+@media (prefers-color-scheme: dark) { .watermark::after { color:#fff; opacity:.5; } }

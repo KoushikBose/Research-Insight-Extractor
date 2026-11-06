@@ -51,13 +51,26 @@ export default function Explore({ onOpen, goLibrary }) {
   const [err, setErr] = useState('')
   const [etype, setEtype] = useState('gene_protein')
   const [sel, setSel] = useState({})
+  const [onlySel, setOnlySel] = useState(false)
+  const [sort, setSort] = useState({ key: null, dir: 'asc' })
 
   const load = () => api.explore().then(setD).catch((e) => setErr(e.message))
   useEffect(() => { load() }, [])
   if (err) return <div className="alert bad">{err}</div>
   if (!d) return <p><Spinner /> Loading analytics…</p>
 
-  const rows = d.compare.filter((r) => !Object.values(sel).some(Boolean) || sel[r.id])
+  const selCount = Object.values(sel).filter(Boolean).length
+  const anySel = selCount > 0
+  const rows = d.compare.filter((r) => !anySel || sel[r.id])
+  const sortBy = (k) => setSort((s) => ({ key: k, dir: s.key === k && s.dir === 'asc' ? 'desc' : 'asc' }))
+  const arrow = (k) => (sort.key === k ? (sort.dir === 'asc' ? ' ▲' : ' ▼') : '')
+  const cell = (v) => (v === null || v === undefined || v === '' ? <small>—</small> : v)
+  const tableRows = [...(onlySel && anySel ? rows : d.compare)].sort((a, b) => {
+    if (!sort.key) return 0
+    const x = a[sort.key], y = b[sort.key]
+    const c = typeof x === 'number' && typeof y === 'number' ? x - y : String(x ?? '').localeCompare(String(y ?? ''))
+    return sort.dir === 'asc' ? c : -c
+  })
   const exportCsv = () => {
     const cols = ['id', 'title', 'year', 'source', 'design', 'population', 'sample_size', 'dosage', 'key_results', 'statistics', 'conclusion']
     const csv = [cols.join(','), ...rows.map((r) => cols.map((c) => csvEscape(r[c])).join(','))].join('\n')
@@ -88,21 +101,43 @@ export default function Explore({ onOpen, goLibrary }) {
         <Network net={d.network} onPick={goLibrary} />
       </section>
       <section className="card">
-        <div className="row between">
-          <h3>Cross-paper comparison <small>(tick papers to compare, or leave empty for all)</small></h3>
-          <button className="ghost small" onClick={exportCsv}>Export CSV</button>
+        <div className="row between wrap">
+          <div>
+            <h3>Cross-paper comparison</h3>
+            <small>Tick papers to compare side by side, or leave empty to include all. {anySel ? `${selCount} selected.` : `${d.compare.length} papers shown.`}</small>
+          </div>
+          <div className="row wrap">
+            <label className="check"><input type="checkbox" checked={onlySel} disabled={!anySel} onChange={(e) => setOnlySel(e.target.checked)} /> Selected only</label>
+            <button className="ghost small" onClick={() => setSel(Object.fromEntries(d.compare.map((r) => [r.id, true])))}>Select all</button>
+            <button className="ghost small" disabled={!anySel} onClick={() => { setSel({}); setOnlySel(false) }}>Clear</button>
+            <button className="small" onClick={exportCsv}>Export CSV{anySel ? ` (${selCount})` : ''}</button>
+          </div>
         </div>
-        <div style={{ overflowX: 'auto' }}>
-          <table>
-            <thead><tr><th /><th>Paper</th><th>Design</th><th>n</th><th>Dose</th><th>Key result</th><th>Statistics</th></tr></thead>
+        <div className="cmp-wrap">
+          <table className="cmp">
+            <thead>
+              <tr>
+                <th style={{ width: 28 }} />
+                <th className="sortable" onClick={() => sortBy('title')}>Paper{arrow('title')}</th>
+                <th className="sortable" onClick={() => sortBy('design')}>Design &amp; population{arrow('design')}</th>
+                <th className="sortable num" onClick={() => sortBy('sample_size')}>n{arrow('sample_size')}</th>
+                <th>Dose</th>
+                <th>Key result</th>
+                <th>Statistics</th>
+              </tr>
+            </thead>
             <tbody>
-              {d.compare.map((r) => (
-                <tr key={r.id} style={{ opacity: Object.values(sel).some(Boolean) && !sel[r.id] ? 0.45 : 1 }}>
+              {tableRows.map((r) => (
+                <tr key={r.id} className={sel[r.id] ? 'picked' : anySel ? 'dim' : ''}>
                   <td><input type="checkbox" checked={!!sel[r.id]} onChange={(e) => setSel({ ...sel, [r.id]: e.target.checked })} /></td>
-                  <td style={{ minWidth: 180 }}><a onClick={() => onOpen(r.id)}>{r.title}</a><br /><small>{r.year} · {r.source}</small></td>
-                  <td style={{ minWidth: 160 }}>{r.design}</td><td><b>{r.n ?? '—'}</b></td>
-                  <td>{r.dosage}</td><td style={{ minWidth: 200 }}>{r.key_results}</td><td>{r.statistics}</td>
+                  <td style={{ minWidth: 200 }}><a onClick={() => onOpen(r.id)}>{r.title}</a><br /><small>{[r.year, r.source].filter(Boolean).join(' · ')}</small></td>
+                  <td style={{ minWidth: 180 }}>{cell(r.design)}{r.population ? <><br /><small>{r.population}</small></> : null}</td>
+                  <td className="num"><b>{r.n ?? '—'}</b></td>
+                  <td>{cell(r.dosage)}</td>
+                  <td style={{ minWidth: 220 }}>{cell(r.key_results)}</td>
+                  <td style={{ minWidth: 140 }}>{cell(r.statistics)}</td>
                 </tr>))}
+              {!tableRows.length && <tr><td colSpan={7}><small>No papers to compare yet.</small></td></tr>}
             </tbody>
           </table>
         </div>

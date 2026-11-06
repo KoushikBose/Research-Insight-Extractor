@@ -31,6 +31,7 @@ export default function App() {
   return (
     <div className="app">
       <header>
+        <span className="brand-logo"><img src="/tcs-logo.svg" alt="TCS" /></span>
         <h1>🧬 Research Insight Extractor</h1>
         <nav>
           {TABS.map((t) => (
@@ -56,6 +57,7 @@ export default function App() {
         {tab === 'Evaluation' && <Evaluation llmEnabled={!!health?.llm_enabled} />}
         {tab === 'Guardrails' && <Guardrails />}
       </main>
+      <div className="watermark" aria-hidden="true" />
       <Toaster />
       <Chat currentPaperId={tab === 'Library' ? paperId : null} onOpenPaper={open} />
     </div>
